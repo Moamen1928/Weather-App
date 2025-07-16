@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- css link -->
+<link rel="stylesheet" href="./css/output.css">
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class=" font-[inter]">
+    <div id="container" style="background-image: url('./images/defaults.jpg');" class="  transition-all duration-700 w-full lg:w-full bg-cover bg-center p-4 relative  min-h-screen flex flex-col gap-6  lg:flex-row lg:justify-center lg:items-center  ">
+            <div id="content" class=" bg-[#67b3c44c] backdrop-blur-md h-110 text-4xl w-full lg:w-1/2 p-6 shadow-2xl translate-y-[-50px] opacity-0 transition-all duration-700 rounded-3xl text-center flex flex-col justify-around items-center ">
+            <h1 class="text-5xl font-extrabold text-blue-950 tracking-wide drop-shadow-md mb-8">Weathery</h1>
+            <h2 class="text-2xl font-bold mb-[20px] text-white">Find the weather of any city</h2>
+            <p class="text-xl text-[#ffffff]">Enter the name of the city to get the weather</p>
+            <input id="input" type="text" name="city"
+                placeholder="Search for a city..."                    class="mb-6 font-bold text-4xl text-blue-950 text-center max-w-[220px] px-4 py-2 bg-blue/10 placeholder:text-2xl placeholder-[#F2EFB6] border-b-2 border-blue-400 rounded-md focus:outline-none  transition duration-300" />
+                <button id="submit" type="submit" name="submit"
+                class="px-6 py-2 font-semibold text-lg bg-blue-500 text-white rounded-md hover:bg-blue-800 hover:shadow-lg  hover:scale-110 ease-in-out  transition-all duration-400">
+                Get Weather
+                </button>
+            </div>
+    <div id="details" class=" bg-[#67b3c44c] backdrop-blur-md rounded-2xl shadow-2xl text-4xl w-full lg:w-0 opacity-0 overflow-hidden transition-all duration-700 text-center flex justify-center items-center">
+<div id="content-lift" class="h-110 p-10 flex flex-col justify-between items-center opacity-0 transition-opacity duration-700">
+    <h1 id="city" class="font-bold text-5xl text-blue-950">--</h1>
+    <h2 id="digree" class="text-5xl font-bold text-white">-- °C</h2>
+    <img id="iconic" src="" alt="">
+    <p id="condition" class="text-3xl font-bold text-white">--</p>
+    </div>
+
+    </div>
+        <div id="content-right" class="w-full lg:w-0 transition-all duration-700">
+            <ul id="days" class="flex flex-col justify-center text-2xl text-white ">
+
+        </ul>
+        </div>
+    </div>
+    </header>
+    <script src="./main.js"></script>
+</body>
+</html>
